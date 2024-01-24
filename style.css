@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Outfit";
+    src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "young-serif";
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: hsl(24, 5%, 18%);
+    font-family: "Outfit",'Courier New', Courier, monospace;
+    background-color: hsl(30, 54%, 90%);
+    font-size: 16px;
+    line-height: 1.5;
+}
+main img {
+    width: 70vw;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    background-color: hsl(0, 0%, 100%);
+    margin: 5rem auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+div {
+    margin: 10px;
+    padding: 10px;
+}
+
+div:nth-of-type(n + 2) > h2 {
+    font-family: "young-serif","Outfit",'Courier New', Courier, monospace;
+    color: hsl(14, 45%, 36%);
+}
+
+h1 {
+    font-family: "young-serif","Outfit",'Courier New', Courier, monospace;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.container > div:first-of-type > h2{
+    color: hsl(332, 51%, 32%);
+}
+
+.container > div:first-of-type{
+    line-height: 2;
+    background-color: hsl(330, 100%, 98%);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+li {
+    padding-left: 30px;
+    margin-left: 20px;
+}
+
+div[class*="tion"] {
+    line-height: 2;
+}
+
+.container div:nth-of-type(even) {
+    line-height: 3;
+}
+
+.instruction {
+    border-bottom: 3px solid hsl(30, 18%, 87%);
+    border-top: 3px solid hsl(30, 18%, 87%);
+}
+
+td:last-child {
+    margin: 0 auto;
+}
+
+li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bolder;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    border-bottom: 2px solid #ddd;
+}
+
+footer {
+    text-align: center;
+    background-color: hsl(24, 5%, 18%);
+    color: hsl(0, 0%, 100%);
+}
+
+a:link {
+    color: aqua;
+}
+
+a:visited {
+    color: tan;
+}
+
+td:last-child {
+    color:  hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.container div:nth-of-type(n + 2) {
+    margin-left: -10px;
+}
+
+.container div:first-of-type {
+    margin-left: 0px;
+}
+
+
+@media (max-width : 768px) {
+    main {
+        width: 100vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 10px;
+        border-radius: 0;
+    }
+    
+    main img {
+        width: 100vw;
+        margin: -40px 0 0 -30px;
+        border-radius: 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+}
